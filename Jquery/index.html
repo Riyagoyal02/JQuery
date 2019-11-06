@@ -1,0 +1,47 @@
+<html>
+    <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <style type="text/css">
+              .blue
+              {
+                  background: blue;
+              }
+              .red
+              {
+                   background: red;
+              }
+             
+      </style>
+            <script>
+            $(document).ready(function(){
+              $("#show").click(function(){
+                $("div").show(1000);
+              });
+                $("#hide").click(function(){
+                $("div").hide(1000);
+                });
+                $("#toggle").click(function(){
+                    $("div").toggle(1000);
+                    });
+                    $("#blue").click(function(){
+                      $("div").removeClass("red");
+                      $("div").addClass("blue");
+                    });
+                    $("#red").click(function(){
+                      $("div").removeClass("blue");
+                       $("div").addClass("red");
+                    });
+                    });
+                  
+            
+            </script>
+            </head>
+  <body>    
+<button id="show">Show</button>
+<button id="hide">Hide</button>
+<button id="toggle">Toggle</button>
+<div>I am DIV</div>
+<button id="blue">blue</button>
+<button id="red">red</button>
+  </body>
+</html>
